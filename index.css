@@ -1,0 +1,52 @@
+/* index.css */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.about-sample_right .about-sample{
+  /* background-color: red; */
+  left: auto;
+  right: 0;
+}
+
+.container_module1 {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.legend{
+  margin-bottom: 20px;
+}
+.legend__list{
+  padding-left: 50px;
+}
+.legend__li::marker{
+  content: '🔥---- ';
+  display: block;
+}
+
+.timer{
+  text-align: center;
+}
+.timer__title{
+  font-weight: 200;
+}
+.timer__fetch-nom{
+  font-weight: 700;
+  color: brown;
+}
+

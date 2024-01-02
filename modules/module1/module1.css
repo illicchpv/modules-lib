@@ -1,0 +1,64 @@
+/* module1.css */
+.module1{
+  padding: 20px;
+  border: 1px solid #676666;
+  /* background-color: red; */
+  border-radius: 10px;
+  min-width: 250px;
+  position: relative;
+
+  h2{
+    position: absolute;
+    top: -1.5em;
+    background-color: white;
+  }
+
+  .box{
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box button{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .val{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+
+    /* position: absolute;
+    top: 1.5em; */
+    margin-top: -1.8em;
+  }
+
+  .box_bar{
+    align-items: flex-start;
+    border-top: 1px solid black;
+    padding-top: 2px;
+    background-color: darkseagreen;
+  }
+  .bar{
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .bar__val{
+    width: 20px;
+    height: 2px;
+    /* background-color: red; */
+    color: white;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -3px;
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;    
+  }
+}

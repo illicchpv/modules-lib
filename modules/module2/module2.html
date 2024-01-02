@@ -1,0 +1,39 @@
+<div id="extId" class="module2">
+  <h2>module2.<span class="instance">instance</span></h2>
+  <div class="box">
+    <div class="param-block">
+      <button onclick="module2.getModuleInstance(this).decCritical()">-</button>
+
+      <span class="critical__level">
+        <span>критическое значение</span>
+        <span class="critical__level-value">30</span>
+      </span>
+
+      <button onclick="module2.getModuleInstance(this)?.incCritical()">+</button>
+    </div>
+
+    <div class="param-block">
+      <span class="timer__count" onclick="module2.getModuleInstance(this)?.pauseToggle()">
+        <span class="timer__on timer__on-off-selected">🔛</span>
+        <span class="timer__off">📴</span>
+        <span>обновление данных №</span>
+        <span class="timer__fetch-nom">0</span>
+        
+      </span>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="chart-block">
+
+      <div class="chart-axis">
+        <div class="critical__line" style="bottom: 30%;"></div>
+
+        <div class="chart-bar" style="height: 35%;background-color: red;"></div>
+        <div class="chart-bar" style="height: 55%;background-color: red;"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

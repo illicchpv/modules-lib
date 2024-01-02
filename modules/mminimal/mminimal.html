@@ -1,0 +1,20 @@
+<!-- 
+  <div class="incs" data-incs='{ 
+      incFile: modulesUrl + "mminimal/mminimal.html",
+      onLoadCallback(el){
+        const iname = "instance1";
+        const inst = mminimal.createInstance(iname);
+        inst.counter = 30;
+        el.extEl.dataset.instance = iname; el.extEl.classList.add(iname);
+      },
+  }'>этот элемент будет заменён из mminimal.html</div>
+-->
+<div id="extId" class="mminimal">
+  <h2>mminimal.<span class="instance">instance</span></h2>
+  <div class="box">
+    <div class="box__row">
+      counter: <span class="counter">0000</span>
+    </div>
+    <button onclick="mminimal.getModuleInstance(this).incCouunter()">press for counter++</button>
+  </div>
+</div>
