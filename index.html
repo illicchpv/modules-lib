@@ -4,21 +4,22 @@
   <script>var isLocal = false; var isMainLocal = true;</script>
   <script src="./isLocal.js"></script>
   <script>
-    var modulesUrl = isLocal ? './modules/' : '//aclive.ru/modules-tests/modules/'
+    var modulesUrl = isLocal ? './modules/' : '//illicchpv.github.io/modules-lib/modules/'
   </script>
 
+  <!-- тут загружаются основные скрипты. либо с локального сервера, либо из интернета -->
   <!-- local основные скрипты
--->
   <script>isMainLocal = true;</script>
   <script src="./modules/utils.js" defer></script>
   <script src="./modules/IncludHtml.js" defer></script>
   <script src="./modules/modulesLoader.js" defer></script>
+-->
   <!-- host основные скрипты
+-->
 <script>isMainLocal = false;</script>
 <script src="//aclive.ru/modules-tests/modules/utils.js" defer></script>
 <script src="//aclive.ru/modules-tests/modules/IncludHtml.js" defer></script>
 <script src="//aclive.ru/modules-tests/modules/modulesLoader.js" defer></script>
--->
   <!-- -->
   <script>console.log('isLocal: ', isLocal, 'isMainLocal:', isMainLocal) </script>
 
@@ -28,5 +29,16 @@
 </head>
 <body>
   <h1>библиотека модулей</h1>
+
+  <div class="incs" data-incs='{ 
+    incFile: modulesUrl + "mminimal/mminimal.html",
+    onLoadCallback(el){
+      const iname = "instance1";
+      const inst = mminimal.createInstance(iname);
+      inst.counter = 30;
+      el.extEl.dataset.instance = iname; el.extEl.classList.add(iname);
+    },
+}'>этот элемент будет заменён из mminimal.html</div>
+  
 </body>
 </html>
